@@ -43,6 +43,8 @@ public class MyMojo
     public void execute()
         throws MojoExecutionException
     {
+
+        getLog().info("DDDDDDD");
         File f = outputDirectory;
 
         if ( !f.exists() )

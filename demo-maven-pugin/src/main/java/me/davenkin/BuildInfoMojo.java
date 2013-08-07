@@ -1,6 +1,5 @@
 package me.davenkin;
 
-
 import org.apache.maven.model.Build;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -8,9 +7,9 @@ import org.apache.maven.project.MavenProject;
 
 /**
  * @goal buildinfo
- * @phase package
+ * @phase  pre-integration-test
  */
-public class ProjectInfoMojo extends AbstractMojo {
+public class BuildInfoMojo extends AbstractMojo {
 
     /**
      * @parameter expression="${project}"

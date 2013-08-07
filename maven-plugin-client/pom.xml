@@ -12,7 +12,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <projectinfo.separator>UTF-8</projectinfo.separator>
     </properties>
 
     <dependencies>
@@ -29,13 +28,16 @@
                 <groupId>me.davenkin</groupId>
                 <artifactId>demo-maven-plugin</artifactId>
                 <version>1.0</version>
+                <configuration>
+                    <prefix>---</prefix>
+                </configuration>
 
                 <executions>
                     <execution>
-                        <id>projectinfo</id>
+                        <id>buildinfo</id>
                         <phase>process-sources</phase>
                         <goals>
-                            <goal>projectinfo</goal>
+                            <goal>buildinfo</goal>
                         </goals>
                     </execution>
                 </executions>
